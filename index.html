@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Load Calculator</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="/css/calculator.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
-<body>
-
+<body style="background-color: rgb(72, 72, 72);">
+    <!--Start Project Here-->
+    <section class="mt-5">
+        <div class="container">
+            <h1 class="display-4 mb-2">Loan Calculator <img src="pngwing.png" class="fa-solid fa-shake"
+                    style="--fa-animation-duration: 25s;" alt="Hand and dollor"></h1>
+            <p class="fs-3">11.1 Unit Testing</p>
+            <div class="card p-3">
+                <div class="card-body">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <div class="vl">
+                                <!--Form-->
+                                <form id="calc-form">
+                                    <div class="col-mb-6 mb-3">
+                                        <label for="form-label" class="form-label">Loan Amount</label>
+                                        <input type="text" class="form-control form-control-lg" id="loan-amount">
+                                    </div>
+                                    <div class="col-mb-6 mb-3">
+                                        <label for="form-label" class="form-label">Term In Years</label>
+                                        <input type="text" class="form-control form-control-lg" id="loan-years">
+                                    </div>
+                                    <div class="col-mb-6 mb-3">
+                                        <label class="form-label">Yearly Rate</label>
+                                        <input type="text" class="form-control form-control-lg" id="loan-rate">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6 m-5">
+                            <div class="monthlyPayment">
+                                <h4 class="m-4">Monthly Payment<h4>
+                                        <button type="submit" id="calculate-btn"
+                                            class="btn btn-outline-secondary fw-bold">Calculate</button>
+                                        <span id="monthly-payment"></span>
+                                        <span class="monthlyPayment_2"><em>per month</em></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <p class="fs-6"><em>Loan Calculator designed and built by Onelio Viera 05/21/2023</em></p>
+        </div>
+    </section>
+    <!--Loan Calc-->
+    <script type="text/javascript" src="/js/calculator.js"></script>
+    <!--Bootstrap-->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/7a6a038f60.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
